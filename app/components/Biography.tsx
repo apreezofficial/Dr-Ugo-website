@@ -102,6 +102,7 @@ const Biography: React.FC = () => {
             fill
             priority
             className="object-cover absolute w-[66%] object-[55%_21%] md:object-cover scale-95 mix-blend-luminosity"
+            sizes="(max-width: 768px) 100vw, 400px"
           />
         </div>
 

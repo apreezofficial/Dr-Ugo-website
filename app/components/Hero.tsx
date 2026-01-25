@@ -11,7 +11,7 @@ const Hero = () => {
             src="/hero-background.png"
             alt="Hero Background"
             fill
-            priority
+            sizes="(max-width: 768px) 100vw, 400px"
             className="object-cover"
           />
         </div>

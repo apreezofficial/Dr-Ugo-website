@@ -70,6 +70,7 @@ const Education: React.FC = () => {
                   alt={edu.school}
                   fill
                   className="object-contain"
+                  sizes="(max-width: 768px) 120px, 160px"
                 />
               </div>
 
