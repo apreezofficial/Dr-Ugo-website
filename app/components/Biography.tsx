@@ -95,14 +95,17 @@ const Biography: React.FC = () => {
       {/* Image & Quote */}
       <div className="flex flex-col md:flex-row w-full min-h-[55vh] bg-[#0F0344]">
         {/* Image Side */}
-        <div className="relative w-full md:w-2/5 h-[40vh] md:h-[55vh] top-2.5 overflow-hidden flex justify-center items-end">
+        <div className="relative w-full md:w-1/2 h-[45vh] md:h-[55vh] overflow-hidden flex items-end justify-center">
           <Image
-            src="/dr-ugo-biography-image.png"
+            src="/dr-ugo-removebg-preview.png"
             alt="Dr Ugo Okafor"
             fill
             priority
-            className="object-cover absolute w-[66%] object-[55%_21%] md:object-cover scale-95 mix-blend-luminosity"
-            sizes="(max-width: 768px) 100vw, 400px"
+            className="
+        object-contain
+        opacity-90
+        mix-blend-luminosity"
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
         </div>
 

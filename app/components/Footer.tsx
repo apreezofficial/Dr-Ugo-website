@@ -63,30 +63,14 @@ const Footer: React.FC = () => {
         </p>
 
         <div className="flex gap-6">
-          <Link href="https://linkedin.com/in/drugo">
+          <Link
+            href="https://www.linkedin.com/company/suntrustatlantic/?originalSubdomain=ng"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Image
               src="/linkedin-logo.svg"
               alt="linkedin logo"
-              width={32}
-              height={32}
-              className="w-8 h-8"
-            />
-          </Link>
-
-          <Link href="https://facebook.com/drugo">
-            <Image
-              src="/facebook-logo.svg"
-              alt="facebook logo"
-              width={32}
-              height={32}
-              className="w-8 h-8"
-            />
-          </Link>
-
-          <Link href="https://x.com/drugo">
-            <Image
-              src="/twitter-logo.svg"
-              alt="twitter logo"
               width={32}
               height={32}
               className="w-8 h-8"

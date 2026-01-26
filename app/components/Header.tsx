@@ -96,6 +96,18 @@ const Header: React.FC = () => {
               </button>
             </li>
           ))}
+
+          {/* External Link */}
+          <li>
+            <a
+              href="https://www.suntrustatlantic.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-playfair-display transition-colors text-[#D7AA5F]"
+            >
+              SunTrust Atlantic
+            </a>
+          </li>
         </ul>
 
         {/* Mobile Menu Button */}
@@ -140,6 +152,18 @@ const Header: React.FC = () => {
                   </button>
                 </li>
               ))}
+
+              {/* External Link (Mobile) */}
+              <li>
+                <a
+                  href="https://www.suntrustatlantic.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block font-playfair-display transition-colorstext-[#D7AA5F]"
+                >
+                  SunTrust Atlantic
+                </a>
+              </li>
             </motion.ul>
           </motion.div>
         )}
