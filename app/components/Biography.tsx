@@ -95,9 +95,9 @@ const Biography: React.FC = () => {
       {/* Image & Quote */}
       <div className="flex flex-col md:flex-row w-full min-h-[55vh] bg-[#0F0344]">
         {/* Image Side */}
-        <div className="relative w-full md:w-1/2 h-[45vh] md:h-[55vh] overflow-hidden flex items-end justify-center">
+        <div className="relative lg:ml-5.5 w-full md:w-1/2 h-[45vh] md:h-[55vh] overflow-hidden flex items-end justify-center">
           <Image
-            src="/dr-ugo-removebg-preview.png"
+            src="/Dr-Ugo-QS-upscale.png"
             alt="Dr Ugo Okafor"
             fill
             priority
@@ -112,6 +112,22 @@ const Biography: React.FC = () => {
     "
             sizes="(max-width: 768px) 100vw, 50vw"
           />
+          {/* <Image
+            src="/Dr-Ugo-QS-removebg.png"
+            alt="Dr Ugo Okafor"
+            fill
+            priority
+            className="
+      object-contain
+      object-bottom
+      scale-x-[1.45] md:scale-x-[1.6]
+      scale-y-100
+      origin-bottom
+      opacity-90
+      mix-blend-luminosity
+    "
+            sizes="(max-width: 768px) 100vw, 50vw"
+          /> */}
         </div>
 
         {/* Quote Side */}

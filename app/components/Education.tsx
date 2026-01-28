@@ -29,11 +29,20 @@ const Education: React.FC = () => {
       logo: "/vanderbilt-logo.png",
     },
     {
-      school: "University of Nigeria, Nsukka",
-      program: "",
-      description: "",
-      type: "",
+      school: "University of Nigeria, Nsukka (Enugu Campus)",
+      program: "Bachelor of Laws (LL.B)",
+      description:
+        "Academic foundation at Nigeria's first indigenous law faculty. The program provided a rigorous grounding in the pillars of Nigerian Jurisprudence, Commercial Law, and Statutory Frameworks. Establishing a strong analytical basis for corporate and energy sector leadership.",
+      type: "Professional Degree",
       logo: "/nsukka-logo.jpg",
+    },
+    {
+      school: "Nigerian Law School",
+      program: "Barrister at Law (B.L)",
+      description:
+        "Professional qualification and Call to the Nigerian Bar. Specialized training in Corporate Law Practice, Legal Drafting, and Regulatory Compliance, ensuring the expert navigation of the complex legal and statutory landscape of Nigeria's upstream oil and gas industry.",
+      type: "Professional Degree",
+      logo: "/nigerian-law-school-logo.png",
     },
   ];
 
@@ -88,7 +97,7 @@ const Education: React.FC = () => {
 
               {/* Description */}
               {edu.description && (
-                <p className="text-gray-600 mt-4 leading-relaxed text-sm md:text-base max-w-2xl">
+                <p className="text-gray-600 mt-4 leading-relaxed text-sm md:text-base">
                   {edu.description}
                 </p>
               )}
