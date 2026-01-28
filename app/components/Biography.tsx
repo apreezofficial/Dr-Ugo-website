@@ -55,7 +55,7 @@ const Biography: React.FC = () => {
             </p>
             <p className="text-[#202020] pt-4 leading-relaxed tracking-wide">
               At SunTrust Atlantic Energies Limited, Dr. Okafor has overseen the
-              transformation of oil license into productive assets,
+              transformation of oil licenses into productive assets,
               demonstrating the technical and commercial expertise required for
               success in Nigeria&apos;s competitive upstream sector. His
               approach combines rigorous technical analysis with strategic
@@ -95,7 +95,24 @@ const Biography: React.FC = () => {
       {/* Image & Quote */}
       <div className="flex flex-col md:flex-row w-full min-h-[55vh] bg-[#0F0344]">
         {/* Image Side */}
-        <div className="relative lg:ml-5.5 w-full md:w-1/2 h-[45vh] md:h-[55vh] overflow-hidden flex items-end justify-center">
+
+        <div className="relative lg:ml-5.5 w-full md:w-1/2 h-[45vh] md:h-[55vh] flex items-end justify-center">
+          <Image
+            src="/Dr-Ugo-QS-upscale.png"
+            alt="Dr Ugo Okafor"
+            fill
+            priority
+            className="
+      object-contain
+      object-bottom
+      opacity-90
+      mix-blend-luminosity
+    "
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+        </div>
+
+        {/* <div className="relative lg:ml-5.5 w-full md:w-1/2 h-[45vh] md:h-[55vh] overflow-hidden flex items-end justify-center">
           <Image
             src="/Dr-Ugo-QS-upscale.png"
             alt="Dr Ugo Okafor"
@@ -112,7 +129,7 @@ const Biography: React.FC = () => {
     "
             sizes="(max-width: 768px) 100vw, 50vw"
           />
-          {/* <Image
+          <Image
             src="/Dr-Ugo-QS-removebg.png"
             alt="Dr Ugo Okafor"
             fill
@@ -127,8 +144,8 @@ const Biography: React.FC = () => {
       mix-blend-luminosity
     "
             sizes="(max-width: 768px) 100vw, 50vw"
-          /> */}
-        </div>
+          />
+        </div> */}
 
         {/* Quote Side */}
         <div className="w-full md:w-3/5 bg-[#0F0344] flex items-center px-6 md:px-16 py-10 md:py-0">
