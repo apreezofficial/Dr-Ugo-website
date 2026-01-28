@@ -51,6 +51,7 @@ const Footer: React.FC = () => {
               <li>MIT Sloan</li>
               <li>Harvard Business School</li>
               <li>Vanderbilt Law School (JD)</li>
+              <li>University Of Nigeria (Nsukka)</li>
             </ul>
           </div>
         </div>

@@ -25,18 +25,18 @@ const Biography: React.FC = () => {
             <p className="text-[#202020] pt-4 leading-relaxed tracking-wide">
               Dr. Ugo Okafor is a distinguished energy executive with over two
               decades of exemplary leadership in Nigeria&apos;s upstream oil and
-              gas sector. As Chief Executive of SunTrust Atlantic Energies
-              Limited, he has demonstrated exceptional acumen in asset
-              acquisition, field development, and strategic portfolio
+              gas sector. As the Founder and Chief Executive of SunTrust
+              Atlantic Energies Limited, he has demonstrated exceptional acumen
+              in asset acquisition, field development, and strategic portfolio
               management.
             </p>
             <p className="text-[#202020] pt-4 leading-relaxed tracking-wide">
               His career is marked by significant achievements in securing and
               developing critical energy assets, including the Umusadege Field
-              (PML 22) and Egbolom Field (PPL 66). Dr. Okafor&apos;s success in
-              the competitive marginal field award process underscores his
-              strategic capabilities and deep understanding of Nigeria&apos;s
-              regulatory and operational landscape.
+              (PML 22) and Egbolom Field (PML 66). Dr. Okafor&apos;s success in
+              these competitive oil license bid rounds underscores his strategic
+              capabilities and deep understanding of Nigeria&apos;s regulatory
+              and operational landscape.
             </p>
           </div>
 
@@ -55,7 +55,7 @@ const Biography: React.FC = () => {
             </p>
             <p className="text-[#202020] pt-4 leading-relaxed tracking-wide">
               At SunTrust Atlantic Energies Limited, Dr. Okafor has overseen the
-              transformation of marginal field awards into productive assets,
+              transformation of oil license into productive assets,
               demonstrating the technical and commercial expertise required for
               success in Nigeria&apos;s competitive upstream sector. His
               approach combines rigorous technical analysis with strategic
@@ -102,9 +102,14 @@ const Biography: React.FC = () => {
             fill
             priority
             className="
-        object-contain
-        opacity-90
-        mix-blend-luminosity"
+      object-contain
+      object-bottom
+      scale-x-[1.45] md:scale-x-[1.6]
+      scale-y-100
+      origin-bottom
+      opacity-90
+      mix-blend-luminosity
+    "
             sizes="(max-width: 768px) 100vw, 50vw"
           />
         </div>

@@ -8,7 +8,7 @@ const LeadershipCareer: React.FC = () => {
       role: "Chief Executive Officer",
       organization: "SunTrust Atlantic Energies Limited",
       description:
-        "Leading strategic direction and operational excellence for an upstream oil and gas company with active petroleum licenses and production operations in Nigeria’s energy sector.",
+        "Leading strategic direction and operational excellence for an upstream oil and gas company with active petroleum licenses and production operations in Nigeria.",
       points: [
         "Executes corporate strategy and long-term growth objectives as defined by the Board of SunTrust Atlantic Energies.",
         "Oversees upstream asset development and portfolio expansion",
