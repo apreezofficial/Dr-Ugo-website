@@ -8,15 +8,13 @@ const Education: React.FC = () => {
       program: "Advanced Management Program",
       description:
         "Ugo is a Graduate of the Advance Advanced Management Program of MIT.",
-      type: "Executive Education",
       logo: "/mit-logo.png",
     },
     {
       school: "Harvard Business School",
       program: "Executive Education",
       description:
-        "Ugo is a graduate of the Owner/President Management (OPM) 45.",
-      type: "Executive Education",
+        "Ugo is a graduate of the Owner/President Management Program (OPM) 45.",
       logo: "/harvard-logo.png",
     },
     {
@@ -24,7 +22,6 @@ const Education: React.FC = () => {
       program: "",
       description:
         "Comprehensive legal education with distinction, providing foundational expertise in corporate law, regulatory frameworks, and governance structures essential for energy sector leadership.",
-      type: "Professional Degree",
       awards: ["Dean’s List", "Scholastic Excellence Award"],
       logo: "/vanderbilt-logo.png",
     },
@@ -33,7 +30,6 @@ const Education: React.FC = () => {
       program: "Bachelor of Laws (LL.B)",
       description:
         "Academic foundation at Nigeria's first indigenous law faculty. The program provided a rigorous grounding in the pillars of Nigerian Jurisprudence, Commercial Law, and Statutory Frameworks. Establishing a strong analytical basis for corporate and energy sector leadership.",
-      type: "Professional Degree",
       logo: "/nsukka-logo.jpg",
     },
     {
@@ -41,7 +37,6 @@ const Education: React.FC = () => {
       program: "Barrister at Law (B.L)",
       description:
         "Professional qualification and Call to the Nigerian Bar. Specialized training in Corporate Law Practice, Legal Drafting, and Regulatory Compliance, ensuring the expert navigation of the complex legal and statutory landscape of Nigeria's upstream oil and gas industry.",
-      type: "Professional Degree",
       logo: "/nigerian-law-school-logo.png",
     },
   ];
@@ -113,15 +108,6 @@ const Education: React.FC = () => {
                       {award}
                     </span>
                   ))}
-                </div>
-              )}
-
-              {/* Divider */}
-              {edu.type && (
-                <div className="border-t border-gray-200 mt-6 pt-4">
-                  <span className="text-xs font-semibold tracking-wide text-[#D7AA5F]">
-                    {edu.type}
-                  </span>
                 </div>
               )}
             </div>

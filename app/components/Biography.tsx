@@ -98,7 +98,7 @@ const Biography: React.FC = () => {
 
         <div className="relative lg:ml-5.5 w-full md:w-1/2 h-[45vh] md:h-[55vh] flex items-end justify-center">
           <Image
-            src="/Dr-Ugo-QS-upscale.png"
+            src="/dr-ugo-okafor-hero-image.svg"
             alt="Dr Ugo Okafor"
             fill
             priority
@@ -152,9 +152,9 @@ const Biography: React.FC = () => {
           <div className="text-white max-w-xl">
             <h3 className="text-base md:text-xl font-roboto mb-6 leading-relaxed italic tracking-wide">
               &quot;Sustainable energy leadership requires operational
-              excellence through rigorous benchmarking of key industry metrics,
-              strategic foresight, and an uncompromising commitment to
-              governance and institutional strengthening&quot;
+              excellence through exceeding key industry metrics, strategic
+              foresight, and an uncompromising commitment to governance and
+              institutional strengthening&quot;
             </h3>
             <p className="font-roboto text-base md:text-lg font-semibold tracking-wider text-[#D7AA5F]">
               Dr Ugo Okafor

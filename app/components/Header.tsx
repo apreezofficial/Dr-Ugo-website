@@ -159,7 +159,7 @@ const Header: React.FC = () => {
                   href="https://www.suntrustatlantic.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block font-playfair-display transition-colorstext-[#D7AA5F]"
+                  className="block font-playfair-display transition-colors text-[#D7AA5F]"
                 >
                   SunTrust Atlantic
                 </a>

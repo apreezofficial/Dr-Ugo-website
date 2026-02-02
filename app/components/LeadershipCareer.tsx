@@ -5,7 +5,7 @@ const LeadershipCareer: React.FC = () => {
   const timeline = [
     {
       period: "2000s – Present",
-      role: "Chief Executive Officer",
+      role: "Founder/Chief Executive Officer",
       organization: "SunTrust Atlantic Energies Limited",
       description:
         "Leading strategic direction and operational excellence for an upstream oil and gas company with active petroleum licenses and production operations in Nigeria.",
@@ -31,7 +31,7 @@ const LeadershipCareer: React.FC = () => {
     },
     {
       period: "2020",
-      role: "Lead Executive, Marginal Field Acquisition",
+      role: "Inaugural Chairman & Chief Executive Officer",
       organization: "",
       description:
         "Led the successful acquisition of a 35.82% participating interest in PML 66 during Nigeria's 2020 bid round, strengthening SunTrust Atlantic’s asset base.",
@@ -44,15 +44,23 @@ const LeadershipCareer: React.FC = () => {
     {
       period: "2020 – Early Development Phase",
       role: "Inaugural Chairman, Operating Committee",
-      organization: "PPL 202 Joint Venture",
+      organization: "PML 66 Joint Venture",
       description:
-        "Established the early governance and operational framework required to transition PPL 202 from acquisition to development.",
+        "Established the early governance and operational framework required to transition PML 66 from acquisition to development.",
       points: [
         "Chaired operating committee deliberations and strategic decisions",
         "Aligned joint-venture partners on development priorities",
         "Set operational standards and performance expectations",
         "Supported early-stage planning and execution readiness",
       ],
+    },
+    {
+      period: "2026 – Early Development Phase",
+      role: "Chairman, Sombreiro Infrastructure Company Ltd",
+      organization: "",
+      description:
+        "A purpose-built infrastructure company established to develop, operate, and manage the pipeline network designed to evacuate over 4,000 barrels of crude oil from the Egbolom Field (PML 66).",
+      points: [],
     },
   ];
 
@@ -118,12 +126,12 @@ const LeadershipCareer: React.FC = () => {
           "
         >
           {/* Leadership */}
-          <div className="relative mx-auto h-[650px] w-[300px] sm:w-[320px] md:h-[731px] md:w-[400px] shrink-0 rounded-[50px] bg-[#F3F3F3] overflow-hidden p-8 snap-center">
+          <div className="relative mx-auto h-[650px] w-[300px] sm:w-[320px] md:h-[731px] md:w-[400px] shrink-0 rounded-[50px] bg-[#F3F3F3] overflow-hidden p-6 md:p-8 snap-center">
             <div className="z-10 relative">
-              <p className="font-roboto text-2xl font-bold mb-3 text-black tracking-wider">
+              <p className="font-roboto text-xl sm:text-2xl font-bold mb-2 sm:mb-3 text-black tracking-wider">
                 Leadership
               </p>
-              <p className="text-[#4D4D4D] leading-relaxed font-roboto">
+              <p className="text-[#4D4D4D] text-sm sm:text-base leading-relaxed font-roboto">
                 A seasoned executive with over two decades of experience in
                 management, strategy, and Nigeria’s upstream oil and gas sector.
               </p>
@@ -131,16 +139,16 @@ const LeadershipCareer: React.FC = () => {
 
             <div className="absolute bottom-0 left-0 w-full h-[520px]">
               <Image
-                src="/dr-ugo-okafor-hero-image.svg"
+                src="/Dr-Ugo-QS-upscale.png"
                 alt="Leadership portrait"
                 fill
-                className="object-contain object-bottom"
+                className="object-cover opacity-90"
                 priority
               />
             </div>
           </div>
 
-          {/* Industry Impact (unchanged) */}
+          {/* Industry Impact */}
           <div className="relative mx-auto rounded-[50px] h-[650px] w-[300px] sm:w-[320px] md:h-[731px] md:w-[400px] shrink-0 overflow-hidden snap-center">
             <Image
               src="/industry-impact-image.png"
@@ -164,7 +172,7 @@ const LeadershipCareer: React.FC = () => {
           {/* Vision & Stewardship */}
           <div className="relative mx-auto rounded-[50px] h-[650px] w-[300px] sm:w-[320px] md:h-[731px] md:w-[400px] shrink-0 overflow-hidden snap-center">
             <Image
-              src="/vision-and-stewardship-image.png"
+              src="/vision-and-stewardship-image.jpeg"
               alt="Vision & Stewardship"
               fill
               className="object-cover"

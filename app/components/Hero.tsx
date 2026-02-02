@@ -28,7 +28,7 @@ const Hero = () => {
             </h1>
 
             <p className="font-roboto text-sm sm:text-base md:text-lg tracking-wide max-w-md">
-              Chief Executive, SunTrust Atlantic Energies Limited
+              Founder/Chief Executive, SunTrust Atlantic Energies Limited
             </p>
 
             <div className="w-[100%] h-[2px] bg-yellow-600 mt-4"></div>
@@ -54,7 +54,7 @@ const Hero = () => {
         <div className="max-w-7xl mx-auto w-full px-6 md:px-16">
           <div className="grid grid-cols-2 sm:grid-cols-4 divide-x sm:divide-x divide-yellow-600">
             <Stat value="20+" label="Years Experience" />
-            <Stat value="3" label="Board Positions" />
+            <Stat value="Various" label="Board Positions" />
             <Stat value="2" label="Major Fields" />
             <Stat value="100%" label="Commitment" />
           </div>
