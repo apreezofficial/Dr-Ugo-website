@@ -16,12 +16,50 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "Dr. Ugo Okafor",
   description: "Portfolio website of Dr. Ugo Okafor",
+  verification: {
+    google: "O4BN-dvYdydx5dzfEGsMbD-YYR7j7KflrkHaQBjRFFg",
+  },
   openGraph: {
-    title: "Dr. Ugo Okafor",
-    description: "Portfolio website of Dr. Ugo Okafor",
     images: [{ url: "https://drugookafor.com/dr-ugo-okafor-hero.png" }],
     url: "https://drugookafor.com",
+    siteName: "Dr. Ugo Okafor - Official Website",
   },
+};
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dr. Ugo Okafor",
+  "url": "https://drugookafor.com",
+  "image": "https://drugookafor.com/dr-ugo-okafor-hero.png",
+  "sameAs": [
+    "https://www.linkedin.com/in/dr-ugo-okafor-952467b/", // Example LinkedIn
+    "https://twitter.com/DrUgoOkafor", // Example Twitter
+    // Add other social media links as applicable
+  ],
+  "jobTitle": "Financial Expert, Leader",
+  "alumniOf": [
+    {
+      "@type": "EducationalOrganization",
+      "name": "University of Nigeria, Nsukka"
+    },
+    {
+      "@type": "EducationalOrganization",
+      "name": "Harvard Business School"
+    },
+    {
+      "@type": "EducationalOrganization",
+      "name": "Massachusetts Institute of Technology (MIT)"
+    },
+    {
+      "@type": "EducationalOrganization",
+      "name": "Nigerian Law School"
+    },
+    {
+      "@type": "EducationalOrganization",
+      "name": "Vanderbilt University"
+    }
+  ]
 };
 
 export default function RootLayout({
@@ -31,6 +69,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
+      </head>
       <body className={`${playfairDisplay.variable} ${roboto.variable}`}>
         {children}
       </body>

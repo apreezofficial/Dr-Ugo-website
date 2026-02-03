@@ -13,6 +13,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://drugookafor.com",
   },
+  openGraph: {
+    title: "Dr. Ugo Okafor - Official Website",
+    description: "Welcome to the official website of Dr. Ugo Okafor. Explore his work, biography, and career.",
+    url: "https://drugookafor.com",
+  },
 };
 
 export default function Home() {

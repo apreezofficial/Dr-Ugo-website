@@ -10,6 +10,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://drugookafor.com/education",
   },
+  openGraph: {
+    title: "Education - Dr. Ugo Okafor",
+    description: "Details about Dr. Ugo Okafor's educational background.",
+    url: "https://drugookafor.com/education",
+  },
 };
 
 export default function EducationPage() {

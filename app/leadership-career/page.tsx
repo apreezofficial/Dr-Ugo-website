@@ -11,6 +11,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://drugookafor.com/leadership-career",
   },
+  openGraph: {
+    title: "Leadership & Career - Dr. Ugo Okafor",
+    description: "An overview of Dr. Ugo Okafor's leadership roles and career milestones.",
+    url: "https://drugookafor.com/leadership-career",
+  },
 };
 
 export default function LeadershipCareerPage() {
