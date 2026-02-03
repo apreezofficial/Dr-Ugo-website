@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     title: "Leadership & Career - Dr. Ugo Okafor",
     description: "An overview of Dr. Ugo Okafor's leadership roles and career milestones.",
     url: "https://drugookafor.com/leadership-career",
+    images: [{ url: "https://drugookafor.com/dr-ugo-okafor-hero.png" }],
   },
 };
 

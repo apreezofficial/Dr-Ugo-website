@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     title: "Education - Dr. Ugo Okafor",
     description: "Details about Dr. Ugo Okafor's educational background.",
     url: "https://drugookafor.com/education",
+    images: [{ url: "https://drugookafor.com/dr-ugo-okafor-hero.png" }],
   },
 };
 

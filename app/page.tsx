@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     title: "Dr. Ugo Okafor - Official Website",
     description: "Welcome to the official website of Dr. Ugo Okafor. Explore his work, biography, and career.",
     url: "https://drugookafor.com",
+    images: [{ url: "https://drugookafor.com/dr-ugo-okafor-hero.png" }],
   },
 };
 

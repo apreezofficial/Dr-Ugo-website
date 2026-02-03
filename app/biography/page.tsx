@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     title: "Biography - Dr. Ugo Okafor",
     description: "Learn about the life and journey of Dr. Ugo Okafor.",
     url: "https://drugookafor.com/biography",
+    images: [{ url: "https://drugookafor.com/dr-ugo-okafor-hero.png" }],
   },
 };
 
