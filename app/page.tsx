@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Biography from "./components/Biography";
 import LeadershipCareer from "./components/LeadershipCareer";
 import Education from "./components/Education";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <Biography />
       <LeadershipCareer />
       <Education />
+      <Contact />
       <Footer />
     </div>
   );

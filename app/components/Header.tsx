@@ -8,6 +8,7 @@ const navLinks = [
   { label: "Biography", id: "biography" },
   { label: "Leadership & Career", id: "leadershipCareer" },
   { label: "Education", id: "education" },
+  { label: "Contact", id: "contact" },
 ];
 
 const Header: React.FC = () => {
