@@ -1,38 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dr. Ugo Okafor Portfolio Website 🎓
 
-## Getting Started
+## Overview
+A high-performance, professionally curated portfolio website designed for an energy sector executive. This project showcases the career milestones, educational background, and strategic leadership of Dr. Ugo Okafor, the Founder and Chief Executive of SunTrust Atlantic Energies Limited. Built with a focus on authority and precision, the platform utilizes modern web technologies to deliver a seamless user experience across all devices.
 
-First, run the development server:
+## Features
+- **Interactive Professional Timeline**: A chronological journey through two decades of leadership in the upstream oil and gas sector.
+- **Academic Excellence Showcase**: Dedicated sections for Ivy League credentials including MIT Sloan, Harvard Business School, and Vanderbilt Law.
+- **Modern UI/UX**: A clean, authoritative aesthetic powered by Tailwind CSS v4 and Framer Motion for subtle, professional animations.
+- **Responsive Navigation**: A mobile-optimized, smooth-scroll header with active section highlighting.
+- **Dynamic Asset Visualization**: High-quality rendering of professional attributes and industry impact via optimized Next.js Image components.
+- **Inquiry Management**: A specialized contact interface for board opportunities, business inquiries, and speaking engagements.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Usage
+The portfolio is designed as a single-page application (SPA) with intuitive navigation. Recruiters and stakeholders can explore the following sections:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1.  **Executive Summary**: Located in the Hero and Biography sections, providing an immediate overview of Dr. Okafor’s value proposition.
+2.  **Leadership & Career**: An interactive vertical timeline detailing roles at SunTrust Atlantic, PML 66, and Sombreiro Infrastructure Company.
+3.  **Credentials**: A structured grid showcasing global academic qualifications with institution-specific branding.
+4.  **External Links**: Direct integration with the SunTrust Atlantic corporate site and professional LinkedIn profiles.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To navigate, use the sticky header or scroll naturally to experience the entrance animations.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Technologies Used
 
-## Learn More
+| Technology | Purpose | Documentation |
+| :--- | :--- | :--- |
+| **Next.js 15+** | React Framework for Production | [Link](https://nextjs.org/) |
+| **React 19** | UI Component Library | [Link](https://react.dev/) |
+| **TypeScript** | Type-safe Development | [Link](https://www.typescriptlang.org/) |
+| **Tailwind CSS v4** | Utility-first Styling | [Link](https://tailwindcss.com/) |
+| **Framer Motion** | Professional Animations | [Link](https://www.framer.com/motion/) |
+| **Lucide React** | Modern Iconography | [Link](https://lucide.dev/) |
 
-To learn more about Next.js, take a look at the following resources:
+## Author Info
+Developed with a focus on executive branding and technical excellence.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **LinkedIn**: [Your LinkedIn Profile]
+- **Portfolio**: [Your Website/Portfolio Link]
+- **Email**: [Your Professional Email]
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Status
+This project is actively maintained to reflect the latest professional achievements and technical standards.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# Dr-Ugo-Okafor-Portfolio-Website
-# Dr-Ugo-Okafor-Portfolio-Website
+[![Readme was generated by Dokugen](https://img.shields.io/badge/Readme%20was%20generated%20by-Dokugen-brightgreen)](https://www.npmjs.com/package/dokugen)
