@@ -3,35 +3,17 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link"; // Import Link from next/link
 
 const navLinks = [
-  { label: "Biography", id: "biography" },
-  { label: "Leadership & Career", id: "leadershipCareer" },
-  { label: "Education", id: "education" },
-  { label: "Contact", id: "contact" },
+  { label: "Biography" },
+  { label: "Leadership & Career" },
+  { label: "Education" },
 ];
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("");
   const menuRef = useRef<HTMLDivElement>(null);
-
-  /* -------------------- Smooth Scroll (MOBILE SAFE) -------------------- */
-  const handleScrollTo = (id: string) => {
-    const el = document.getElementById(id);
-    if (!el) return;
-
-    const headerOffset = 96;
-    const y =
-      el.getBoundingClientRect().top + window.pageYOffset - headerOffset;
-
-    window.scrollTo({ top: y, behavior: "smooth" });
-
-    // 🔑 Delay menu close so mobile scroll isn't cancelled
-    setTimeout(() => {
-      setIsOpen(false);
-    }, 300);
-  };
 
   /* -------------------- Lock Body Scroll -------------------- */
   useEffect(() => {
@@ -54,47 +36,25 @@ const Header: React.FC = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [isOpen]);
 
-  /* -------------------- Active Section Highlight -------------------- */
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      { threshold: 0.6 },
-    );
-
-    navLinks.forEach((link) => {
-      const section = document.getElementById(link.id);
-      if (section) observer.observe(section);
-    });
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <header className="fixed top-0 w-full z-50 bg-[#0A0909]">
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
-        <div className="text-xl font-playfair-display font-bold text-white">
+        <Link href="/" className="text-xl font-playfair-display font-bold text-white">
           Dr. Ugo Okafor
-        </div>
+        </Link>
 
         {/* Desktop Nav */}
         <ul className="hidden md:flex space-x-8 text-white">
           {navLinks.map((link) => (
-            <li key={link.id}>
-              <button
-                onClick={() => handleScrollTo(link.id)}
-                className={`font-playfair-display transition-colors ${
-                  activeSection === link.id ? "text-[#D7AA5F]" : "text-white"
-                }`}
+            <li key={link.label}>
+              <Link
+                href="/"
+                onClick={() => setIsOpen(false)} // Close mobile menu if open
+                className={`font-playfair-display transition-colors text-white hover:text-[#D7AA5F]`}
               >
                 {link.label}
-              </button>
+              </Link>
             </li>
           ))}
 
@@ -104,7 +64,7 @@ const Header: React.FC = () => {
               href="https://www.suntrustatlantic.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-playfair-display transition-colors text-[#D7AA5F]"
+              className="font-playfair-display transition-colors text-[#D7AA5F] hover:text-white"
             >
               SunTrust Atlantic
             </a>
@@ -140,17 +100,14 @@ const Header: React.FC = () => {
               className="flex flex-col px-6 py-6 space-y-6 text-white"
             >
               {navLinks.map((link) => (
-                <li key={link.id}>
-                  <button
-                    onClick={() => handleScrollTo(link.id)}
-                    className={`block w-full text-left font-playfair-display transition-colors ${
-                      activeSection === link.id
-                        ? "text-[#D7AA5F]"
-                        : "text-white"
-                    }`}
+                <li key={link.label}>
+                  <Link
+                    href="/"
+                    onClick={() => setIsOpen(false)} // Close mobile menu
+                    className={`block w-full text-left font-playfair-display transition-colors text-white hover:text-[#D7AA5F]`}
                   >
                     {link.label}
-                  </button>
+                  </Link>
                 </li>
               ))}
 
@@ -160,7 +117,7 @@ const Header: React.FC = () => {
                   href="https://www.suntrustatlantic.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block font-playfair-display transition-colors text-[#D7AA5F]"
+                  className="block font-playfair-display transition-colors text-[#D7AA5F] hover:text-white"
                 >
                   SunTrust Atlantic
                 </a>
