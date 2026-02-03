@@ -1,10 +1,19 @@
+import { Metadata } from "next";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Biography from "./components/Biography";
 import LeadershipCareer from "./components/LeadershipCareer";
 import Education from "./components/Education";
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+
+export const metadata: Metadata = {
+  title: "Dr. Ugo Okafor - Official Website",
+  description:
+    "Welcome to the official website of Dr. Ugo Okafor. Explore his work, biography, and career.",
+  alternates: {
+    canonical: "https://drugookafor.com",
+  },
+};
 
 export default function Home() {
   return (
@@ -14,7 +23,6 @@ export default function Home() {
       <Biography />
       <LeadershipCareer />
       <Education />
-      <Contact />
       <Footer />
     </div>
   );

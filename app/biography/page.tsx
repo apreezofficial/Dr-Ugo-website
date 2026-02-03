@@ -1,7 +1,16 @@
+import { Metadata } from "next";
 import Header from "@/app/components/Header";
 import Biography from "@/app/components/Biography";
 import Footer from "@/app/components/Footer";
 import PageHero from "@/app/components/PageHero";
+
+export const metadata: Metadata = {
+  title: "Biography - Dr. Ugo Okafor",
+  description: "Learn about the life and journey of Dr. Ugo Okafor.",
+  alternates: {
+    canonical: "https://drugookafor.com/biography",
+  },
+};
 
 export default function BiographyPage() {
   return (

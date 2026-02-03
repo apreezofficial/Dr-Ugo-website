@@ -1,7 +1,16 @@
+import { Metadata } from "next";
 import Header from "@/app/components/Header";
 import Education from "@/app/components/Education";
 import Footer from "@/app/components/Footer";
 import PageHero from "@/app/components/PageHero";
+
+export const metadata: Metadata = {
+  title: "Education - Dr. Ugo Okafor",
+  description: "Details about Dr. Ugo Okafor's educational background.",
+  alternates: {
+    canonical: "https://drugookafor.com/education",
+  },
+};
 
 export default function EducationPage() {
   return (

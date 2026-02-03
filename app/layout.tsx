@@ -16,6 +16,12 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "Dr. Ugo Okafor",
   description: "Portfolio website of Dr. Ugo Okafor",
+  openGraph: {
+    title: "Dr. Ugo Okafor",
+    description: "Portfolio website of Dr. Ugo Okafor",
+    images: [{ url: "https://drugookafor.com/dr-ugo-okafor-hero.png" }],
+    url: "https://drugookafor.com",
+  },
 };
 
 export default function RootLayout({
