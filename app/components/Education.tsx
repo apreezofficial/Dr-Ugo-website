@@ -1,7 +1,11 @@
 import React from "react";
 import Image from "next/image";
 
-const Education: React.FC = () => {
+interface EducationProps {
+  id?: string;
+}
+
+const Education: React.FC<EducationProps> = ({ id }) => {
   const educations = [
     {
       school: "MIT Sloan School of Management",
@@ -42,7 +46,7 @@ const Education: React.FC = () => {
   ];
 
   return (
-    <section id="education" className="py-16 md:py-24 bg-[#F7F7F7]">
+    <section id={id} className="py-16 md:py-24 bg-[#F7F7F7]">
       <div className="container mx-auto px-4 max-w-5xl">
         {/* Header */}
         <div className="flex flex-col items-center mb-12 md:mb-16 text-center">

@@ -1,7 +1,11 @@
 import React from "react";
 import Image from "next/image";
 
-const LeadershipCareer: React.FC = () => {
+interface LeadershipCareerProps {
+  id?: string;
+}
+
+const LeadershipCareer: React.FC<LeadershipCareerProps> = ({ id }) => {
   const timeline = [
     {
       period: "2000s – Present",
@@ -65,7 +69,7 @@ const LeadershipCareer: React.FC = () => {
   ];
 
   return (
-    <section id="leadershipCareer" className="py-24 bg-white">
+    <section id={id} className="py-24 bg-white">
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Header */}
         <div className="flex flex-col items-center mb-12">

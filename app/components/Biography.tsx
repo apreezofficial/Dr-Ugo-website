@@ -1,9 +1,13 @@
 import React from "react";
 import Image from "next/image";
 
-const Biography: React.FC = () => {
+interface BiographyProps {
+  id?: string;
+}
+
+const Biography: React.FC<BiographyProps> = ({ id }) => {
   return (
-    <section id="biography" className="pt-20 bg-[#F7F7F7]">
+    <section id={id} className="pt-20 bg-[#F7F7F7]">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="flex flex-col items-center mb-12">
