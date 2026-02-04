@@ -26,9 +26,9 @@ export default function Home() {
     <div>
       <Header />
       <Hero />
-      <Biography />
-      <LeadershipCareer />
-      <Education />
+      <Biography id="biography" />
+      <LeadershipCareer id="leadership-career" />
+      <Education id="education" />
       <Footer />
     </div>
   );

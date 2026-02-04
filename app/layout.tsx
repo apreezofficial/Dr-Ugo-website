@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Roboto } from "next/font/google";
 import "./globals.css";
+import Hidden from "./components/Hidden"; // Import the Hidden component
 
 const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
@@ -77,8 +78,10 @@ export default function RootLayout({
         />
       </head>
       <body className={`${playfairDisplay.variable} ${roboto.variable}`}>
+        <Hidden /> {/* Render the Hidden component */}
         {children}
       </body>
     </html>
   );
 }
+

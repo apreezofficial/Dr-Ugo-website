@@ -6,9 +6,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link"; // Import Link from next/link
 
 const navLinks = [
-  { label: "Biography" },
-  { label: "Leadership & Career" },
-  { label: "Education" },
+  { label: "Biography", href: "/#biography" },
+  { label: "Leadership & Career", href: "/#leadership-career" },
+  { label: "Education", href: "/#education" },
 ];
 
 const Header: React.FC = () => {
@@ -49,7 +49,7 @@ const Header: React.FC = () => {
           {navLinks.map((link) => (
             <li key={link.label}>
               <Link
-                href="/"
+                href={link.href}
                 onClick={() => setIsOpen(false)} // Close mobile menu if open
                 className={`font-playfair-display transition-colors text-white hover:text-[#D7AA5F]`}
               >
@@ -102,7 +102,7 @@ const Header: React.FC = () => {
               {navLinks.map((link) => (
                 <li key={link.label}>
                   <Link
-                    href="/"
+                    href={link.href}
                     onClick={() => setIsOpen(false)} // Close mobile menu
                     className={`block w-full text-left font-playfair-display transition-colors text-white hover:text-[#D7AA5F]`}
                   >

@@ -17,6 +17,28 @@ export const metadata: Metadata = {
     url: "https://drugookafor.com/leadership-career",
     images: [{ url: "https://drugookafor.com/dr-ugo-okafor-hero.png" }],
   },
+  // Add BreadcrumbList Schema.org
+  __metadata_script__: {
+    type: "application/ld+json",
+    innerHTML: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://drugookafor.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Leadership & Career",
+          "item": "https://drugookafor.com/leadership-career"
+        }
+      ]
+    })
+  }
 };
 
 export default function LeadershipCareerPage() {
