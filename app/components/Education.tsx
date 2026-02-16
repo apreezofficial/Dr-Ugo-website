@@ -11,7 +11,7 @@ const Education: React.FC<EducationProps> = ({ id }) => {
       school: "MIT Sloan School of Management",
       program: "Advanced Management Program",
       description:
-        "Ugo is a Graduate of the Advance Advanced Management Program of MIT.",
+        "Ugo is a Graduate of the Advance Management Program of MIT.",
       logo: "/mit-logo.png",
     },
     {
