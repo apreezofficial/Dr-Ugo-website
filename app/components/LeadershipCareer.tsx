@@ -142,13 +142,16 @@ const LeadershipCareer: React.FC<LeadershipCareerProps> = ({ id }) => {
             </div>
 
             <div className="absolute bottom-0 left-0 w-full h-[520px]">
-              <Image
-                src="/Dr-ugoQS.png"
-                alt="Leadership portrait"
-                fill
-                className="object-cover opacity-90"
-                priority
-              />
+              <div className="relative h-screen w-full">
+  <Image
+    src="/Dr-ugoQS.png"
+    alt="Leadership portrait"
+    fill
+    className="object-cover object-center opacity-90"
+    priority
+  />
+</div>
+
             </div>
           </div>
 
