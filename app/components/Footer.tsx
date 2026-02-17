@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between gap-10">
         {/* Brand / Bio */}
         <div className="w-full md:w-[539px]">
-          <div className="flex justify-center md:justify-start">
+          <div className="flex text-left md:text-left">
             <h2 className="text-xl font-bold font-playfair-display text-[#202020] border-b-2 border-[#D7AA5F]">
               Dr.
             </h2>
@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
             </h2>
           </div>
 
-          <p className="font-roboto mt-3 text-[#5E5D5D] text-center md:text-left">
+          <p className="font-roboto mt-3 text-[#5E5D5D] text-left md:text-left">
             Chief Executive, SunTrust Atlantic Energies Limited
           </p>
 
@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-1 font-roboto text-[#5E5D5D] text-sm mt-4">
               <li>MIT Sloan</li>
               <li>Harvard Business School</li>
-              <li>Vanderbilt Law School (JD)</li>
+              <li>Vanderbilt Law School (Juris Doctor)</li>
               <li>University Of Nigeria (Nsukka)</li>
             </ul>
           </div>
