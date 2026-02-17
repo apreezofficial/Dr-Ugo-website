@@ -11,14 +11,13 @@ const Education: React.FC<EducationProps> = ({ id }) => {
       school: "MIT Sloan School of Management",
       program: "Advanced Management Program",
       description:
-        "Ugo is a Graduate of the Advance Management Program of MIT.",
+        "Ugo is a Graduate of the Advanced Management Program of MIT.",
       logo: "/mit-logo.png",
     },
     {
       school: "Harvard Business School",
-      program: "Executive Education",
-      description:
-        "Ugo is a graduate of the Owner/President Management Program (OPM) 45.",
+      program: "",
+      description: "Ugo is a graduate of Harvard Business School.",
       logo: "/harvard-logo.png",
     },
     {
@@ -33,14 +32,14 @@ const Education: React.FC<EducationProps> = ({ id }) => {
       school: "University of Nigeria, Nsukka (Enugu Campus)",
       program: "Bachelor of Laws (LL.B)",
       description:
-        "Academic foundation at Nigeria's first indigenous law faculty. The program provided a rigorous grounding in the pillars of Nigerian Jurisprudence, Commercial Law, and Statutory Frameworks. Establishing a strong analytical basis for corporate and energy sector leadership.",
+        "Academic foundation at Nigeria's first indigenous law faculty. The program provided a rigorous grounding in the pillars of Nigerian Jurisprudence, Commercial Law, and Statutory Frameworks, establishing a strong analytical basis for corporate and energy sector leadership.",
       logo: "/nsukka-logo.jpg",
     },
     {
       school: "Nigerian Law School",
       program: "Barrister at Law (B.L)",
       description:
-        "Professional qualification and Call to the Nigerian Bar. Specialized training in Corporate Law Practice, Legal Drafting, and Regulatory Compliance, ensuring the expert navigation of the complex legal and statutory landscape of Nigeria's upstream oil and gas industry.",
+        "Professional qualification and Call to the Nigerian Bar. Specialized training in Corporate Law Practice, Legal Drafting, and Regulatory Compliance, ensuring expert navigation of the complex legal and statutory landscape of Nigeria's upstream oil and gas industry.",
       logo: "/nigerian-law-school-logo.png",
     },
   ];
@@ -63,13 +62,7 @@ const Education: React.FC<EducationProps> = ({ id }) => {
           {educations.map((edu, idx) => (
             <div
               key={idx}
-              className="
-                bg-white rounded-xl
-                px-6 py-8
-                md:px-8 md:py-12
-                mx-auto
-                max-w-xl md:max-w-none
-              "
+              className="bg-white rounded-xl px-6 py-8 md:px-8 md:py-12 mx-auto max-w-xl md:max-w-none"
             >
               {/* Logo */}
               <div className="w-14 h-14 md:w-16 md:h-16 relative mb-5">
