@@ -34,18 +34,6 @@ const LeadershipCareer: React.FC<LeadershipCareerProps> = ({ id }) => {
       ],
     },
     {
-      period: "2023",
-      role: "Inaugural chief executive",
-      organization: "Ingentia Energies Ltd",
-      description:
-        "Led the successful acquisition of a 35.82% participating interest in PML 66 during Nigeria's 2020 oil bid round, strengthening SunTrust Atlantic’s asset base.",
-      points: [
-        "Directed bid strategy and partner coordination",
-        "Secured a significant equity position in a high-potential asset",
-        "Expanded the company's long-term production and growth pipeline",
-      ],
-    },
-    {
       period: "2020– Early Development Phase",
       role: "Inaugural Chairman, Operating Committee",
       organization: "PML 66 Joint Venture",
@@ -56,6 +44,18 @@ const LeadershipCareer: React.FC<LeadershipCareerProps> = ({ id }) => {
         "Aligned joint-venture partners on development priorities",
         "Set operational standards and performance expectations",
         "Supported early-stage planning and execution readiness",
+      ],
+    },
+    {
+      period: "2023",
+      role: "Inaugural chief executive",
+      organization: "Ingentia Energies Ltd",
+      description:
+        "Led the successful acquisition of a 35.82% participating interest in PML 66 during Nigeria's 2020 oil bid round, strengthening SunTrust Atlantic’s asset base.",
+      points: [
+        "Directed bid strategy and partner coordination",
+        "Secured a significant equity position in a high-potential asset",
+        "Expanded the company's long-term production and growth pipeline",
       ],
     },
     {
