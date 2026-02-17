@@ -28,8 +28,7 @@ const Biography: React.FC<BiographyProps> = ({ id }) => {
             </h3>
             <p className="text-[#202020] pt-4 leading-relaxed tracking-wide">
               Dr. Ugo Okafor is a distinguished energy executive with over two
-              decades of exemplary leadership in Nigeria&apos;s upstream oil and
-              gas sector. As the Founder and Chief Executive of SunTrust
+              decades of exemplary leadership in Nigeria oil and gas upstream and regulatory operational landscape. As the Founder and Chief Executive of SunTrust
               Atlantic Energies Limited, he has demonstrated exceptional acumen
               in asset acquisition, field development, and strategic portfolio
               management.
