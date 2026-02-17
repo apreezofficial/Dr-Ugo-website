@@ -156,7 +156,7 @@ const Biography: React.FC<BiographyProps> = ({ id }) => {
           <div className="text-white max-w-xl">
             <h3 className="text-base md:text-xl font-roboto mb-6 leading-relaxed italic tracking-wide">
               &quot;Sustainable energy leadership requires operational
-              excellence through exceeding key industry metrics, strategic
+              excellence by exceeding key industry metrics, strategic
               foresight, and an uncompromising commitment to governance and
               institutional strengthening&quot;
             </h3>
