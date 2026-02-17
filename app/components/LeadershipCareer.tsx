@@ -34,11 +34,11 @@ const LeadershipCareer: React.FC<LeadershipCareerProps> = ({ id }) => {
       ],
     },
     {
-      period: "2020",
-      role: "Inaugural Chairman & Chief Executive Officer",
-      organization: "",
+      period: "2023",
+      role: "Inaugural chief executive",
+      organization: "Ingentia Energies Ltd",
       description:
-        "Led the successful acquisition of a 35.82% participating interest in PML 66 during Nigeria's 2020 bid round, strengthening SunTrust Atlantic’s asset base.",
+        "Led the successful acquisition of a 35.82% participating interest in PML 66 during Nigeria's 2020 oil bid round, strengthening SunTrust Atlantic’s asset base.",
       points: [
         "Directed bid strategy and partner coordination",
         "Secured a significant equity position in a high-potential asset",
@@ -46,7 +46,7 @@ const LeadershipCareer: React.FC<LeadershipCareerProps> = ({ id }) => {
       ],
     },
     {
-      period: "2020 – Early Development Phase",
+      period: "2020– Early Development Phase",
       role: "Inaugural Chairman, Operating Committee",
       organization: "PML 66 Joint Venture",
       description:
@@ -63,7 +63,7 @@ const LeadershipCareer: React.FC<LeadershipCareerProps> = ({ id }) => {
       role: "Chairman, Sombreiro Infrastructure Company Ltd",
       organization: "",
       description:
-        "A purpose-built infrastructure company established to develop, operate, and manage the pipeline network designed to evacuate over 4,000 barrels of crude oil from the Egbolom Field (PML 66).",
+        "A purpose-built infrastructure company established to develop, operate, and manage the pipeline network designed to evacuate crude oil from the Egbolom Field (PML 66).",
       points: [],
     },
   ];
