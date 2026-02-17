@@ -5,6 +5,7 @@ import Biography from "./components/Biography";
 import LeadershipCareer from "./components/LeadershipCareer";
 import Education from "./components/Education";
 import Footer from "./components/Footer";
+import VideoSection from "./components/VideoSection";
 
 export const metadata: Metadata = {
   title: "Dr. Ugo Okafor - Official Website",
@@ -26,6 +27,7 @@ export default function Home() {
     <div>
       <Header />
       <Hero />
+      <VideoSection />
       <Biography id="biography" />
       <LeadershipCareer id="leadership-career" />
       <Education id="education" />
