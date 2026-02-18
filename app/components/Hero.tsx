@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <section id="hero" className="min-h-screen flex flex-col bg-black">
+    <section id="hero" className="min-h-screen flex flex-col bg-[#0F0344]">
       {/* HERO TOP */}
       <div className="relative h-[85vh] md:h-[80vh] w-full overflow-hidden">
         {/* Background Image - Reduced opacity or kept as is since container is black */}
