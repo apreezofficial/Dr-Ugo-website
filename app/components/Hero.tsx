@@ -6,7 +6,7 @@ const Hero = () => {
       {/* HERO TOP */}
       <div className="relative h-[85vh] md:h-[80vh] w-full overflow-hidden">
         {/* Background Image - Reduced opacity or kept as is since container is black */}
-        <div className="absolute inset-0 opacity-40">
+        <div className="absolute">
           <Image
             src="/hero-background.png"
             alt="Hero Background"
