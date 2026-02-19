@@ -1,12 +1,15 @@
 'use client'
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 
 const NIESVideoSection = () => {
-  const [isPlaying, setIsPlaying] = useState(false);
-  
   // SharePoint Stream URL provided by the user
   const videoUrl = "https://suntrustoil-my.sharepoint.com/personal/hanyele_suntrustoil_com/_layouts/15/stream.aspx?id=%2Fpersonal%2Fhanyele%5Fsuntrustoil%5Fcom%2FDocuments%2FSunTrust%20AE%20Rebranding%2FWebsite%20Pictures%2FWebsite%20Corrections%2FVID%2D20250226%2DWA0033%20copy%2Ewebm&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ee2467cac%2D1c77%2D47c4%2Dade8%2Dd876a2708bb9";
+
+  const handlePlayClick = () => {
+    // Opens the video in a new tab
+    window.open(videoUrl, "_blank", "noopener,noreferrer");
+  };
 
   return (
     <section className="py-20 bg-gray-50">
@@ -47,59 +50,46 @@ const NIESVideoSection = () => {
 
           {/* Video Side */}
           <div className="w-full lg:w-1/2">
-            <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl bg-[#1a1a1a] group cursor-pointer border border-[#D7AA5F]/10">
-              
-              {!isPlaying ? (
-                <div
-                  className="relative w-full h-full"
-                  onClick={() => setIsPlaying(true)}
-                >
-                  {/* Thumbnail Placeholder */}
-                  <Image
-                    src="/industry-impact-image.png"
-                    alt="NIES 2025 Energy Summit"
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105 opacity-60"
-                  />
-                  
-                  {/* Overlay Gradient */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+            <div 
+              onClick={handlePlayClick}
+              className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl bg-[#1a1a1a] group cursor-pointer border border-[#D7AA5F]/10"
+            >
+              <div className="relative w-full h-full">
+                {/* Thumbnail Placeholder */}
+                <Image
+                  src="/industry-impact-image.png"
+                  alt="NIES 2025 Energy Summit"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105 opacity-60"
+                />
+                
+                {/* Overlay Gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
 
-                  {/* Play Button */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="relative flex items-center justify-center">
-                      
-                      {/* Pulse Rings */}
-                      <span className="absolute inline-flex h-20 w-20 animate-ping rounded-full bg-[#D7AA5F] opacity-75"></span>
-                      <span className="absolute inline-flex h-24 w-24 animate-pulse rounded-full bg-[#D7AA5F]/30"></span>
+                {/* Play Button */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="relative flex items-center justify-center">
+                    {/* Pulse Rings */}
+                    <span className="absolute inline-flex h-20 w-20 animate-ping rounded-full bg-[#D7AA5F] opacity-75"></span>
+                    <span className="absolute inline-flex h-24 w-24 animate-pulse rounded-full bg-[#D7AA5F]/30"></span>
 
-                      {/* Button */}
-                      <button className="relative z-10 bg-[#D7AA5F] text-white p-6 rounded-full hover:bg-[#c49850] transition-colors shadow-xl">
-                        <svg
-                          className="w-8 h-8 fill-current"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M8 5v14l11-7z" />
-                        </svg>
-                      </button>
+                    {/* Button */}
+                    <div className="relative z-10 bg-[#D7AA5F] text-white p-6 rounded-full group-hover:bg-[#c49850] transition-colors shadow-xl">
+                      <svg
+                        className="w-8 h-8 fill-current"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
                     </div>
                   </div>
-
-                  {/* Caption on Thumbnail */}
-                  <div className="absolute bottom-6 left-6 right-6">
-                    <p className="text-white/90 text-sm font-roboto tracking-wide uppercase">Watch Session Highlights</p>
-                  </div>
                 </div>
-              ) : (
-                <iframe
-                  className="w-full h-full"
-                  src={videoUrl}
-                  title="SunTrust Atlantic at NIES 2025"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              )}
 
+                {/* Caption on Thumbnail */}
+                <div className="absolute bottom-6 left-6 right-6">
+                  <p className="text-white/90 text-sm font-roboto tracking-wide uppercase">Watch Session Highlights</p>
+                </div>
+              </div>
             </div>
           </div>
 
