@@ -10,7 +10,7 @@ import NIESVideoSection from "./components/NIESVideoSection";
 
 export const metadata: Metadata = {
   title: "Dr. Ugo Okafor - Official Website",
-  description:
+  description: 
     "Welcome to the official website of Dr. Ugo Okafor. Explore his work, biography, and career.",
   alternates: {
     canonical: "https://drugookafor.com",
