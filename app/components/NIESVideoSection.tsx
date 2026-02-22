@@ -5,8 +5,8 @@ import Image from "next/image";
 const NIESVideoSection = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
-  // YouTube Video ID provided by the user
-  const videoId = "KU6Vy0SvvL8";
+  // YouTube Video ID provided by the user 
+  const videoId = "kU6Vy0SvvL8";
   const videoUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
 
   return (
@@ -57,7 +57,7 @@ const NIESVideoSection = () => {
                 >
                   {/* Thumbnail Placeholder */}
                   <Image
-                    src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
+                    src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
                     alt="NIES 2025 Energy Summit"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105 opacity-60"
