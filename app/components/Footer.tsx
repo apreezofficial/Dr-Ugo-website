@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-1 font-roboto text-[#5E5D5D] text-sm mt-4">
               <li>MIT Sloan</li>
               <li>Harvard Business School</li>
-              <li>Vanderbilt Law School (Juris Doctor)</li>
+              <li>Vanderbilt Law School</li>
               <li>University Of Nigeria (Nsukka)</li>
             </ul>
           </div>
