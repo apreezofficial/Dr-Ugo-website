@@ -51,7 +51,7 @@ const Hero = () => {
           <div className="grid grid-cols-2 sm:grid-cols-4 divide-x divide-yellow-600">
             <Stat value="20+" label="Years Experience" />
             <Stat value="Various" label="Board Positions" />
-            <Stat value="Key" label="Key Production Interest" />
+            <Stat value="" label="Key Production Interest" />
             <Stat value="100%" label="Commitment" />
           </div>
         </div>
