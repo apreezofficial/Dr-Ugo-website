@@ -1,0 +1,58 @@
+import { Metadata } from "next";
+import Header from "@/app/components/Header";
+import Biography from "@/app/components/Biography";
+import Footer from "@/app/components/Footer";
+import PageHero from "@/app/components/PageHero";
+
+export const metadata: Metadata = {
+  title: "Biography - Dr. Ugo Okafor",
+  description: "Learn about the life and journey of Dr. Ugo Okafor.",
+  alternates: {
+    canonical: "https://drugookafor.com/biography",
+  },
+  openGraph: {
+    title: "Biography - Dr. Ugo Okafor",
+    description: "Learn about the life and journey of Dr. Ugo Okafor.",
+    url: "https://drugookafor.com/biography",
+    images: [{ url: "https://drugookafor.com/dr-ugo-okafor-hero.png" }],
+  },
+};
+
+export default function BiographyPage() {
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://drugookafor.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Biography",
+        "item": "https://drugookafor.com/biography"
+      }
+    ]
+  };
+
+  return (
+    <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <Header />
+      <main>
+        <PageHero
+          title="Biography"
+          subtitle="Delve into the life and professional journey of Dr. Ugo Okafor, a leader in finance and investment."
+        />
+        <Biography />
+      </main>
+      <Footer />
+    </div>
+  );
+}
