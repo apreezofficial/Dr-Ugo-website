@@ -44,19 +44,17 @@ const Hero = () => {
           </div>
         </div>
       </div>
+{/* STATS BAR */}
+<div className="bg-white py-6 md:h-[20vh] flex items-center">
+  <div className="max-w-4xl mx-auto w-full px-6">
+    <div className="grid grid-cols-3 text-center divide-x divide-yellow-600">
+      <Stat value="20+" label="Years Experience" />
+      <Stat value="Various" label="Board Positions" />
+      <Stat value="100%" label="Commitment" />
+    </div>
+  </div>
+</div>
 
-      {/* STATS BAR */}
-      <div className="bg-white py-6 md:h-[20vh] flex items-center">
-        <div className="max-w-7xl mx-auto w-full px-6 md:px-16">
-                              <center>
-          <div className="grid grid-cols-2 sm:grid-cols-4 divide-x divide-yellow-600">
-            <Stat value="20+" label="Years Experience" />
-            <Stat value="Various" label="Board Positions" />
-            <Stat value="100%" label="Commitment" />
-            </div>
-                                                                </center>
-        </div>
-      </div>
     </section>
   );
 };
